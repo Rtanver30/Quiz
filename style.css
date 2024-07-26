@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+header, section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #4596cc;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.question {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.certificate {
+    background-color: white;
+    margin-top: auto;
+    border: 5px solid #2c3e50;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.certificate-template {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    height: 500px;
+}
+
+.certificate h2 {
+    font-size: 28px;
+    color: #2c3e50;
+}
+
+.cert-name {
+    font-size: 35px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.cert-date {
+    font-size: 18px;
+}
+
+.certificate h2, .certificate h3 {
+    font-size: 35px;
+    margin: 10px 0;
+    color: #2b649c;
+}
+
+.question {
+    text-align: center;
+}
