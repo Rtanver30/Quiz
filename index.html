@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Certification</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .logo {
+            width: 200px;
+            height: auto;
+            margin-bottom: 5px;
+            mix-blend-mode: multiply;
+        }
+
+        p {
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Course Certification</h1>
+    </header>
+    <section id="user-info">
+        <h2>Enter Your Information</h2>
+        <form id="user-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <button type="button" onclick="startQuiz()">Start Quiz</button>
+        </form>
+    </section>
+    <section id="quiz" style="display: none;">
+        <h2>Quiz</h2>
+        <div id="timer">Time: <span id="time">30</span> seconds</div>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. What does HTML stand for?</p>
+                <input type="radio" id="q1a1" name="q1" value="a">
+                <label for="q1a1">Hyper Text Markup Language</label><br>
+                <input type="radio" id="q1a2" name="q1" value="b">
+                <label for="q1a2">Home Tool Markup Language</label><br>
+                <input type="radio" id="q1a3" name="q1" value="c">
+                <label for="q1a3">Hyperlinks and Text Markup Language</label><br>
+            </div>
+            <div class="question">
+                <p>2. What does CSS stand for?</p>
+                <input type="radio" id="q2a1" name="q2" value="a">
+                <label for="q2a1">Cascading Style Sheets</label><br>
+                <input type="radio" id="q2a2" name="q2" value="b">
+                <label for="q2a2">Creative Style Sheets</label><br>
+                <input type="radio" id="q2a3" name="q2" value="c">
+                <label for="q2a3">Computer Style Sheets</label><br>
+            </div>
+            <!-- Add more questions here -->
+            <button type="button" onclick="checkAnswers()">Submit Quiz</button>
+        </form>
+    </section>
+    <section id="certificate" style="display: none;">
+        <h2>Certificate</h2>
+        <div class="certificate" style="background-image:url('certificate.png'); background-repeat: no-repeat; background-size: cover;">
+            <div class="certificate-header">
+                <img src="logore.png" alt="Logo" class="logo">
+            </div>
+            <div id="certificate-template" class="certificate-template">
+                <h2>Certificate of Completion</h2>
+                <p>This is to certify that</p>
+                <p id="cert-name" class="cert-name">[Name]</p>
+                <p>has successfully completed the course</p>
+                <p>HTML, CSS, and JavaScript Basics</p>
+                <p>on</p>
+                <p id="cert-date" class="cert-date">[Date]</p>
+            </div>
+        </div>
+        <button id="download-certificate" onclick="downloadCertificate()">Download Certificate</button>
+    </section> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
